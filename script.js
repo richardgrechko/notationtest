@@ -9,7 +9,7 @@ function layer(a,b,c)
 	{
 		if (b < 6)
 		{
-			E = a * (10**b)
+			E = (a * (10**b)).toFixed(3)
 		}
 		else
 		{
