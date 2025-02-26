@@ -32,7 +32,7 @@ function layer(a,b,c)
 }
 setInterval(function()
 {
-	t *= 1.005
+	t *= 1.001
 	text = layer(10**(10**(t%1)%1),Math.floor(10**(t%1)),Math.floor(t))
-	document.getElementById("text") = text
+	document.getElementById("text").innerHTML = text
 }, 30)
