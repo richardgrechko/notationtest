@@ -1,4 +1,3 @@
-"use strict"
 function layer(a,b,c)
 {
 	c = Math.floor(c)
