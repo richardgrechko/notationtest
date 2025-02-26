@@ -1,3 +1,5 @@
+let t = 1;
+let text;
 function layer(a,b,c)
 {
 	c = Math.floor(c)
@@ -28,3 +30,9 @@ function layer(a,b,c)
 	}
 	return E
 }
+setInterval(function()
+{
+	t *= 1.005
+	text = layer(10**(10**(t%1)%1),Math.floor(10**(t%1)),Math.floor(t))
+	document.getElementById("text") = text
+}, 30)
