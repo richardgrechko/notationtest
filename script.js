@@ -1,5 +1,5 @@
 let t = 1;
-let text; // reload idfk
+let text;
 function layer(a,b,c)
 {
 	c = Math.floor(c)
