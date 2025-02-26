@@ -21,11 +21,11 @@ function layer(a,b,c)
 	{
 		if (b < 5)
 		{
-			E = ((c < 4) ? layers[c-2] : ("[" + c + "]")).repeat(b-1) + layer(10**(a%1),Math.floor(a),c-1)
+			E = ((c < 5) ? layers[c-2] : ("[" + c + "]")).repeat(b-1) + layer(10**(a%1),Math.floor(a),c-1)
 		}
 		else
 		{
-			E = a.toFixed(6) + ((c < 4) ? layers[c-1] : ("[" + c + "]")) + b
+			E = a.toFixed(6) + ((c < 5) ? layers[c-1] : ("[" + c + "]")) + b
 		}
 	}
 	return E
