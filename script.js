@@ -20,7 +20,7 @@ function layer(a,b,c)
 	{
 		if (b < 5)
 		{
-			E = (b==1) ? "" : ((((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1)) + layer(10**((10**a)%1),10**a,c-1)
+			E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1))) + layer(10**((10**a)%1),10**a,c-1)
 		}
 		else
 		{
