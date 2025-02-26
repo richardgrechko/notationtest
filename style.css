@@ -1,0 +1,10 @@
+@font-face {
+	font-family: Roboto Mono;
+	src: url("../RobotoMono-Regular-CkM0S3kP.woff2") format("woff2")
+}
+html {
+	background-color: black;
+	color: white;
+	font-size: 24px;
+	font-family: Roboto Mono;
+}
