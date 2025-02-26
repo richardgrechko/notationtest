@@ -3,7 +3,6 @@ let text;
 function layer(a,b,c)
 {
 	c = Math.floor(c)
-	console.log("layer", [a,b,c])
 	let layers = "eFGH"
 	let E = ""
 	if (c === 1)
