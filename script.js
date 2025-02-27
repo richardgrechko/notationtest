@@ -53,6 +53,6 @@ setInterval(function()
 		y += 1;
 		x = (x%10)+1
 	}
-	text = layer(x,(y%9)+1,Math.floor(y%9))
+	text = layer(x,(y%9)+1,Math.floor(y/9)+1)
 	document.getElementById("text").innerHTML = text
 }, 30)
