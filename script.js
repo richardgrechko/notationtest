@@ -47,7 +47,7 @@ function layer(a,b,c)
 }
 setInterval(function()
 {
-	x *= 1.01+(y/100);
+	x *= 1.01**(y+1);
 	if (x >= 10)
 	{
 		y += 1;
