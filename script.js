@@ -1,6 +1,6 @@
 let x = 1;
 let y = 0;
-let text;
+let text; //restarting e
 function layer(a,b,c)
 {
 	c = Math.floor(c)
