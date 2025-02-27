@@ -1,5 +1,5 @@
 let t = 1;
-let text;//reload again
+let text;
 function layer(a,b,c)
 {
 	c = Math.floor(c)
