@@ -44,7 +44,7 @@ function layer(a,b,c)
 	}
 	return E
 }
-function y()
+function z()
 {
 	if (x >= 10)
 	{
@@ -57,7 +57,7 @@ function y()
 setInterval(function()
 {
 	x *= 1.01+(y+1)/100;
-	while(y())
+	while(z())
 	text = layer(10**(x%1),Math.floor(x%8)+2,y+1)
 	document.getElementById("text").innerHTML = text
 }, 30)
