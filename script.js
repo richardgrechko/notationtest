@@ -1,7 +1,6 @@
 let x = 1;
 let y = 0;
 let text;
-// it can't do shit i have to restart
 function layer(a,b,c)
 {
 	c = Math.floor(c)
