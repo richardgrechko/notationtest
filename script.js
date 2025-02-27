@@ -44,14 +44,20 @@ function layer(a,b,c)
 	}
 	return E
 }
-setInterval(function()
+function y()
 {
-	x *= 1.01**(y+1);
 	if (x >= 10)
 	{
 		y += 1;
-		x = (x%10)+1
+		x -= 8
+		return true;
 	}
-	text = layer(10**(x%1),Math.floor(x%8)+2,y)
+	return false;
+}
+setInterval(function()
+{
+	x *= 1.01+(y+1)/100;
+	while(y())
+	text = layer(10**(x%1),Math.floor(x%8)+2,y+1)
 	document.getElementById("text").innerHTML = text
 }, 30)
