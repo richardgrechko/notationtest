@@ -1,4 +1,6 @@
-let t = 1;
+let x = 1;
+let y = 1;
+let z = 1;
 let text;
 function layer(a,b,c)
 {
@@ -45,7 +47,12 @@ function layer(a,b,c)
 }
 setInterval(function()
 {
-	t += .001
-	text = layer(10**(10**(t%1)%1),Math.floor(10**(t%1)),Math.floor(t))
+	x *= 1.01+(y/100);
+	if (x >= 10)
+	{
+		y += 1;
+		x = (x%10)+1
+	}
+	text = layer(x,(y%9)+1,Math.floor(y%9))
 	document.getElementById("text").innerHTML = text
 }, 30)
