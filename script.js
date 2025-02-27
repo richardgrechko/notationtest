@@ -52,6 +52,6 @@ setInterval(function()
 		y += 1;
 		x = (x%10)+1
 	}
-	text = layer(10**(x%1),10**((y%8)+2),y)
+	text = layer(10**(x%1),Math.floor(x%8)+2,y)
 	document.getElementById("text").innerHTML = text
 }, 30)
