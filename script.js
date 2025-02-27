@@ -20,21 +20,21 @@ function layer(a,b,c)
 	{
 		if (b < 5)
 		{
-if (c === 2)
-{
-if (b >= 2)
-{
-E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1))) + layer(10**((10**a)%1),Math.floor(10**a),c-1)
-}
-else
-{
-E = layer(10**(a%1),Math.floor(a),c-1)
-}
-}
-else
-{
-E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1))) + layer(10**(a%1),Math.floor(a),c-1)
-}
+			if (c === 2)
+			{
+				if (b === 1)
+				{
+					E = layer(10**(a%1),Math.floor(a),c-1)
+				}
+				else
+				{
+					E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1) + layer(10**((10**a)%1),Math.floor(10**a),c-1)
+				}
+			}
+			else
+			{
+				E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1))) + layer(10**(a%1),Math.floor(a),c-1)
+			}
 		}
 		else
 		{
