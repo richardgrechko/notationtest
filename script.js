@@ -38,7 +38,7 @@ function layer(a,b,c)
 		}
 		else
 		{
-			E = a.toFixed(6) + ((c < 5) ? layers[c-1] : ("[" + c + "]")) + b
+			E = ((c < 5) ? layers[c-1] : ("[" + c + "]")) + (b+Math.log10(a)).toFixed(6)
 		}
 	}
 	return E
