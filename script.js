@@ -33,7 +33,7 @@ function layer(a,b,c)
 			}
 			else
 			{
-				E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1))) + layer(10**(a%1),Math.floor(a),c-1)
+				E = ((b==1) ? "" : ((c-1) < 5) ? layers[c-2] : ("[" + (c-1) + "]")).repeat(b-1) + layer(10**(a%1),Math.floor(a),c-1)
 			}
 		}
 		else
